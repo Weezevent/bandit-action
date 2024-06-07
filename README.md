@@ -1,4 +1,4 @@
-# Bandit Action
+# Bandit Action   
 From Bandit documentation:
 
 Bandit is a tool designed to find common security issues in Python code. To do this Bandit processes each file, builds an AST from it, and runs appropriate plugins against the AST nodes. Once Bandit has finished scanning all the files it generates a report.
@@ -71,3 +71,10 @@ with:
   confidence: high
   exit_zero: true
 ```
+
+
+## Deploy new version
+
+- increment version in setup.cfg
+- run python setup.py sdist
+- change reference to dist/.../.tar.gz in Dockerfile
